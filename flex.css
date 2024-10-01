@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://cdn.imgchest.com/files/wye3cdbko4b.png");
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16.6px;
+}
+
+.container > * {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+    display: flex;
+    text-align: left;
+    height: 200px;
+}
+
+.box1 {
+    flex: 1 1 18.1%;
+}
+
+.box2 {
+    flex: 1 1 75.3%;
+}
+
+.box3, .box4{
+    flex: 1 1 42.1%;
+}
+
+.box5 {
+    flex: 1 1 4%;
+}
+
+.box6 {
+    flex: 1 1 100%;
+}
