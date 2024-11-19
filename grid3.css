@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+
+@media (max-width: 1400px){
+ .container {
+    display: grid;
+    grid-template-rows: minmax(35px, 23px) minmax(435px, auto) minmax(855px, 1fr) minmax(325px, auto);
+    grid-template-columns: minmax(230px, 1fr) minmax(477px, 2fr) minmax(565px, 2fr) minmax(339px, 1fr);
+    grid-template-areas: 
+    "one two two two"
+    "six five five seven"
+    "three three eight nine"
+    "four four eight nine";    
+ }
+}
+
+.box1 {
+    grid-area: one;
+}
+.box2 {
+    grid-area: two;
+}
+.box3 {
+    grid-area: three;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+    position: relative;
+    background-color: blue; 
+    padding: 10px; 
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
+.box9 {
+    grid-area: nine;
+}
+.box6 ul {
+    position: absolute; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.box6 ul li {
+    color: white;
+    text-transform: uppercase; 
+    border-bottom: 1px solid white; 
+    font-size: 20px; 
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+    padding: 5px 0; 
+}
+
+.box6 ul li:nth-child(9) {
+    background-color: darkorange; 
+}
+
+ul {
+    padding: 0; 
+    margin: 0;
+    list-style: none; 
+}
+
+.box6 ul li:hover {
+    background-color: white;
+    color: blue; 
+    border-bottom-color: darkorange; 
+}
