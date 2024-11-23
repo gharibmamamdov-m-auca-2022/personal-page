@@ -17,8 +17,8 @@ body {
 @media (max-width: 1400px){
  .container {
     display: grid;
-    grid-template-rows: minmax(35px, 23px) minmax(435px, auto) minmax(855px, 1fr) minmax(325px, auto);
-    grid-template-columns: minmax(230px, 1fr) minmax(477px, 2fr) minmax(565px, 2fr) minmax(339px, 1fr);
+    grid-template-rows: minmax(35px, 23px) minmax(145px, auto) minmax(855px, 1fr) minmax(325px, auto);
+    grid-template-columns: minmax(155px, 1fr) minmax(477px, 2fr) minmax(565px, 2fr) minmax(339px, 1fr);
     grid-template-areas: 
     "one two two two"
     "six five five seven"
@@ -44,9 +44,9 @@ body {
 }
 .box6 {
     grid-area: six;
-    position: relative;
-    background-color: blue; 
-    padding: 10px; 
+    position: relative; 
+    background-color: white;
+
 }
 .box7 {
     grid-area: seven;
@@ -57,35 +57,24 @@ body {
 .box9 {
     grid-area: nine;
 }
+
 .box6 ul {
-    position: absolute; 
-    display: flex; 
-    flex-direction: column; 
-    gap: 10px; 
+    position: absolute;
+    top: 26px; 
+    right: 264px;
+    display: flex;
+    gap: 27px; 
 }
 
 .box6 ul li {
-    color: white;
-    text-transform: uppercase; 
-    border-bottom: 1px solid white; 
-    font-size: 20px; 
-    font-family: Arial, sans-serif; 
+    font-size: 1.1rem; 
     font-weight: bold;
-    padding: 5px 0; 
-}
-
-.box6 ul li:nth-child(9) {
-    background-color: darkorange; 
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
-    padding: 0; 
+    padding: 0;
     margin: 0;
-    list-style: none; 
-}
-
-.box6 ul li:hover {
-    background-color: white;
-    color: blue; 
-    border-bottom-color: darkorange; 
+    list-style: none;
 }
