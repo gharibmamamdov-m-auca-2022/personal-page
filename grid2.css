@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(https://cdn.imgchest.com/files/j7mmcrepg76.png);
     background-repeat: no-repeat;
     max-width: 1143px;
     min-height: 1583px;
@@ -15,8 +14,8 @@ body {
     border: 2px dashed blue;
 }
 
-@media (max-width: 1400px){
- .container {
+
+.container {
     display: grid;
     grid-template-rows: minmax(35px, 23px) minmax(75px, auto) minmax(855px, 1fr) minmax(325px, auto);
     grid-template-columns: minmax(155px, 1fr) minmax(477px, 2fr) minmax(565px, 2fr) minmax(339px, 1fr);
@@ -25,8 +24,8 @@ body {
     "two five six seven"
     "three three eight nine"
     "four four eight nine";    
- }
 }
+
 
 .box1 {
     grid-area: one;
