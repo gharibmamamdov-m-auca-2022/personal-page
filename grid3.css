@@ -2,6 +2,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+img:nth-of-type(1) {
+    display: none;
+}
+   
 body {
     background-repeat: no-repeat;
     max-width: 1143px;
@@ -14,8 +19,8 @@ body {
     border: 2px dashed blue;
 }
 
-@media (max-width: 1400px){
- .container {
+
+.container {
     display: grid;
     grid-template-rows: minmax(35px, 23px) minmax(145px, auto) minmax(855px, 1fr) minmax(325px, auto);
     grid-template-columns: minmax(155px, 1fr) minmax(477px, 2fr) minmax(565px, 2fr) minmax(339px, 1fr);
@@ -24,8 +29,8 @@ body {
     "six five five seven"
     "three three eight nine"
     "four four eight nine";    
- }
 }
+
 
 .box1 {
     grid-area: one;
@@ -59,18 +64,17 @@ body {
 }
 
 .box6 ul {
-    position: absolute;
-    top: 26px; 
-    right: 264px;
-    display: flex;
-    gap: 27px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px;  
 }
 
 .box6 ul li {
-    font-size: 1.1rem; 
-    font-weight: bold;
-    color: black; 
-    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-transform: uppercase; 
+    border-bottom: 1px solid black; 
+    font-family: Arial, sans-serif; 
+    font-weight: 160;
 }
 
 ul {
