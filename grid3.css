@@ -31,6 +31,21 @@ body {
     "four four eight nine";    
 }
 
+@media (max-width: 500px) {
+    .container {
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "one"
+    "two"
+    "six"
+    "nine"
+    "five"
+    "three"
+    "seven"
+    "eight"
+    "four";
+    }
+}
 
 .box1 {
     grid-area: one;
