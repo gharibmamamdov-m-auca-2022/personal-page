@@ -18,19 +18,30 @@ body {
     border: 2px dashed blue;
 }
 
+.buttonMenu {
+    display: none;
+} 
 
 .container {
     display: grid;
-    grid-template-rows: minmax(39px, 23px) minmax(81px, auto) minmax(500px, 1fr) minmax(461px, auto);
-    grid-template-columns: minmax(155px, 1fr) minmax(477px, 2fr) minmax(565px, 2fr) minmax(339px, 1fr);
+    grid-template-rows: minmax(39px, 23px) minmax(81px, auto) minmax(500px, 1fr) minmax(461px, auto) minmax(272px, 409px);
+    grid-template-columns: minmax(50px, 236px) minmax(50px, 472px) minmax(50px, 488px) minmax(50px, 100px);
     grid-template-areas: 
     "one one one one"
-    "two five five seven"
+    "two five seven seven"
     "six nine nine nine"
-    "three three four eight";    
+    "four three three three"
+    "four eight eight eight";    
 }
 
 @media (max-width: 500px) {
+    .buttonMenu {
+        display: block;
+        position: fixed; 
+        top: 10px; 
+        right: 0; 
+    }
+       
     .container {
     grid-template-columns: 100%;
     grid-template-areas:
@@ -48,6 +59,7 @@ body {
 
 .box1 {
     grid-area: one;
+    background-color: rgb(0, 145, 255);
 }
 
 .box2 {
@@ -100,6 +112,7 @@ body {
     border-bottom: 1px solid black; 
     font-family: Arial, sans-serif; 
     font-weight: 160;
+    
 }
 
 ul {
@@ -108,3 +121,9 @@ ul {
     list-style: none;
 }
 
+p{
+    font-size: small;
+    margin: 10px;
+    color: white;
+    font-family: sans-serif;
+}

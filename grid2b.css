@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(35px, 23px) minmax(75px, auto) minmax(855px, 1fr) minmax(325px, auto);
+    grid-template-columns: minmax(155px, 1fr) minmax(477px, 2fr) minmax(565px, 2fr) minmax(339px, 1fr);
+    grid-template-areas: 
+    "one one one one"
+    "two five six seven"
+    "three three eight nine"
+    "four four eight nine";    
+}
+
+
+.box1 {
+    grid-area: one;
+    background-color: rgb(0, 145, 255);
+
+}
+.box2 {
+    grid-area: two;
+    background: url("https://serep.kg/wp-content/uploads/2021/01/serep.png") no-repeat center center;
+    background-size: contain; 
+    background-color: white;
+}
+.box3 {
+    grid-area: three;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+    position: relative; 
+    background-color: white;
+
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
+.box9 {
+    grid-area: nine;
+}
+
+.box6 ul {
+    position: absolute;
+    top: 26px; 
+    right: 264px;
+    display: flex;
+    gap: 27px; 
+}
+
+.box6 ul li {
+    font-size: 1.1rem; 
+    font-weight: bold;
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1 {
+    color: black;
+    font-size: medium;
+}
+
+p{
+    font-size: small;
+    margin: 10px;
+    color: white;
+    font-family: sans-serif;
+}
