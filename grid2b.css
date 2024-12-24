@@ -307,3 +307,18 @@ p{
     margin: 0;
     color: white;
 }
+
+.buttonMenu {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.buttonMenu img {
+    width: 5px; 
+    height: 5px;
+}

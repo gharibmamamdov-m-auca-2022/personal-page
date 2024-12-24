@@ -174,13 +174,15 @@
     </script>
 
     <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
-    <button class="buttonMenu">MENU</button>
-    
+    <button class="buttonMenu" aria-label="Open menu">
+        <img src="https://i.pinimg.com/736x/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.jpg" alt="Hamburger Menu Icon" />
+    </button>
+        
     <script>
         const buttonMenu = document.querySelector('.buttonMenu');
         const boxSix = document.querySelector('.box6'); 
         buttonMenu.addEventListener('click', () => {
-            console.log('yes, button clicked!');
+            console.log('yes, humburger clicked!');
             boxSix.classList.toggle('mobileMenu'); 
         });
     </script>
